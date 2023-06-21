@@ -1,7 +1,7 @@
 from numpy import full
 
 
-class Scenary:
+class Scenery:
     def __init__(self, size_line, size_col, empty_symbol):
         self.map = full((size_line, size_col), empty_symbol)
 
@@ -32,10 +32,10 @@ class Scenary:
                     symbol_positions.append((i, j))
         return symbol_positions
 
-    def write_scenary(self, write, position):
+    def write_scenery(self, write, position):
         self.map[position[0]][position[1]] = write
 
-    def show_scenary(self):
+    def show_scenery(self):
         for i in range(len(self.map)):
             for j in range(len(self.map[i])):
                 print(self.map[i][j])
