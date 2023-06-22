@@ -41,7 +41,7 @@ def create_scenery():
         population1.append(Individual(symbols[1], empty_spaces[position], prob_move[0], prob_breeding[0], prob_inhibition[0], prob_killed[0], prob_death[0], scenery))
         empty_spaces.remove(empty_spaces[position])
 
-    for l in range(0, initial_population[0]):
+    for l in range(0, initial_population[1]):
         position = randint(0, len(empty_spaces)-1)
         population2.append(Individual(symbols[2], empty_spaces[position], prob_move[1], prob_breeding[1], prob_inhibition[1], prob_killed[1], prob_death[1], scenery))
         empty_spaces.remove(empty_spaces[position])
